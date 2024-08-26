@@ -1,0 +1,11 @@
+{
+    "name": "p2p-payment-network",
+    "version": "1.0.0",
+    "description": "Decentralized P2P Payment Network",
+    "main": "src/api/index.js"
+}
+    "scripts": {
+      "test": "npx hardhat test",
+      "deploy": "npx hardhat run scripts/deploy.js --network rinkeby",
+      "start": "node src/api/index.js"
+    }
