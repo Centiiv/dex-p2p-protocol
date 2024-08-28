@@ -6,10 +6,17 @@ module.exports = {
   etherscan: {
     apiKey: {
       sepolia: process.env.ETHERSCAN_API_KEY,
+      bscTestnet: process.env.ETHERSCAN_API_KEY_BSC,
     },
   },
   networks: {
     hardhat: {},
+    bscTestnet: {
+      url: process.env.NETWORK_RPC_URL_BSC_TESTNET,
+      chainId: 97,
+
+      accounts: [process.env.PRIVATE_KEY],
+    },
 
     sepolia: {
       url: process.env.NETWORK_RPC_URL_SEPOLIA,

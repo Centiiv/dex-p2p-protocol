@@ -7,7 +7,9 @@
     "test": "npx hardhat test",
     "build": "npx hardhat compile",
     "deploy-sepolia": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network sepolia",
+    
     "deploy-mainnet": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network mainnet",
+    "deploy-bscTestnet-verify": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network bscTestnet  --verify",
     "deploy-sepolia-verify": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network sepolia --verify",
     "deploy-mainnet-verify": " npx hardhat ignition deploy ignition/modules/aggregator.js --network mainnet --verify",
     "start": "node src/api/index.js"
