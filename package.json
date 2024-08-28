@@ -1,11 +1,25 @@
 {
-    "name": "p2p-payment-network",
-    "version": "1.0.0",
-    "description": "Decentralized P2P Payment Network",
-    "main": "src/api/index.js"
+  "name": "p2p-payment-network",
+  "version": "1.0.0",
+  "description": "Decentralized P2P Payment Network",
+  "main": "src/api/index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "build": "npx hardhat compile",
+    "deploy-sepolia": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network sepolia",
+    "deploy-mainnet": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network mainnet",
+    "deploy-sepolia-verify": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network sepolia --verify",
+    "deploy-mainnet-verify": " npx hardhat ignition deploy ignition/modules/aggregator.js --network mainnet --verify",
+    "start": "node src/api/index.js"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.9"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.5",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^4.3.6",
+    "dotenv": "^16.4.5"
+  }
 }
-    "scripts": {
-      "test": "npx hardhat test",
-      "deploy": "npx hardhat run scripts/deploy.js --network rinkeby",
-      "start": "node src/api/index.js"
-    }

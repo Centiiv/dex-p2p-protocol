@@ -45,15 +45,21 @@ cd p2p-payment-network-evm
 npm install
 
 3. Set up environment variables: Create a .env file in the root directory with the following content:
-INFURA_PROJECT_ID=<Your_Infura_Project_ID>
-PRIVATE_KEY=<Your_Private_Key>
-LIQUIDITY_PROVIDER_URL=https://your-liquidity-provider.com/api
+NETWORK_RPC_URL_SEPOLIA= 
+NETWORK_RPC_URL_MAINNET= 
+PRIVATE_KEY= 
+ETHERSCAN_API_KEY= 
 
 
 4. Compile and deploy the smart contract:
-truffle compile
-truffle migrate --network <network-name>
-Replace <network-name> with development, ropsten, or any other configured network.
+    "build": "npx hardhat compile",
+    "deploy-sepolia": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network sepolia",
+    "deploy-mainnet": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network mainnet",
+    "deploy-sepolia-verify": " npx hardhat ignition deploy ./ignition/modules/aggregator.js --network sepolia --verify",
+    "deploy-mainnet-verify": " npx hardhat ignition deploy ignition/modules/aggregator.js --network mainnet --verify",
+    npm run build
+    npm run deploy-sepolia-verify
+ 
 
 - Usage
 Start the backend server:
@@ -66,15 +72,11 @@ npm start
 }
 - Monitor transactions: The backend service will automatically monitor and finalize transactions.
 
-- Testing
-Run tests using Mocha:
-npm test
+ 
 
 - Deployment
-The contract can be deployed to any EVM-compatible blockchain using Truffle.
+The contract can be deployed to any EVM-compatible blockchain using hardhat.
 
-- Truffle Configuration
-Truffle is configured in truffle-config.js to deploy contracts to various networks. Ensure you have a valid Infura project ID and private key set up in the .env file for deploying to testnets or mainnets.
-
+ 
 License
 This project is licensed under the MIT License.
