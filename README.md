@@ -1,4 +1,4 @@
-# P2P Payment Network on EVM-Compatible Blockchains
+# Decentralized P2P Payment Network on EVM-Compatible Blockchains
 
 This project implements a decentralized P2P payment network on multiple EVM-compatible blockchain networks using Solidity for the smart contract and Node.js for the backend. The system allows users to send stablecoins to an aggregator smart contract, which then communicates with a liquidity provider to disburse the equivalent amount in fiat currency to a settlement bank account.
 
@@ -82,5 +82,5 @@ The contract can be deployed to any EVM-compatible blockchain using hardhat.
 ## License
 
 All rights reserved. Unauthorized use, distribution, or modification of this code is strictly prohibited.
-This software is the property of [Your Name or Company]. Any use of this software requires a license from [Your Name or Company].
-For inquiries about obtaining a license, please contact [Your Email or Contact Information].
+This software is the property of Centiiv Technologies LTD. Any use of this software requires a license from Centiiv Technologies LTD.
+For inquiries about obtaining a license, please contact hello@centiiv.com.
