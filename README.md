@@ -78,5 +78,9 @@ npm start
 The contract can be deployed to any EVM-compatible blockchain using hardhat.
 
  
-License
-This project is licensed under the MIT License.
+ 
+## License
+
+All rights reserved. Unauthorized use, distribution, or modification of this code is strictly prohibited.
+This software is the property of [Your Name or Company]. Any use of this software requires a license from [Your Name or Company].
+For inquiries about obtaining a license, please contact [Your Email or Contact Information].
