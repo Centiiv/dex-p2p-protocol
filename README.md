@@ -3,7 +3,7 @@
 This project implements a decentralized P2P payment network on multiple EVM-compatible blockchain networks using Solidity for the smart contract and Node.js for the backend. The system allows users to send stablecoins to an aggregator smart contract, which then communicates with a liquidity provider to disburse the equivalent amount in fiat currency to a settlement bank account.
 
 ## Project Structure
-p2p-payment-network-evm/
+<!-- p2p-payment-network-evm/
 │
 ├── contracts/
 │   └── Aggregator.sol
@@ -29,7 +29,7 @@ p2p-payment-network-evm/
 ├── .env
 ├── truffle-config.js
 ├── package.json
-└── README.md
+└── README.md -->
 
 Prerequisites
 Node.js and npm installed
